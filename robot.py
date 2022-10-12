@@ -8,4 +8,7 @@ class Robot:
         self.active_weapon = Weapon('Slasher', 35)
 
     def attack(self, dinosaur):
-        pass
+        dinosaur = dinosaur - self.active_weapon.attack_power
+        print()
+        print(f'{self.name} attacked Trooper for {self.active_weapon.attack_power} damage!')
+        print(f'Trooper has {dinosaur} health remaining!')

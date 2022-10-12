@@ -24,7 +24,8 @@ Only one will be victorious
 
     def battle_phase(self):
         self.dinosaur.attack(self.robot.health)
-
+        self.robot.attack(self.dinosaur.health)
+        
 
     def display_winner(self):
         pass
