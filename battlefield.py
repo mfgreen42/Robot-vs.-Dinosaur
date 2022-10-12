@@ -6,12 +6,12 @@ from dinosaur import Dinosaur
 class Battlefield:
 
     def __init__(self):
-        self.robot = Robot
-        self.dinosaur = Dinosaur
+        self.robot = Robot('Tin Man')
+        self.dinosaur = Dinosaur('Trooper', 20)
 
     def run_game(self):
         self.display_welcome()
-    
+        self.battle_phase()
 
 
     def display_welcome(self):
@@ -23,7 +23,7 @@ Only one will be victorious
 
 
     def battle_phase(self):
-        pass
+        self.dinosaur.attack(self.robot.health)
 
 
     def display_winner(self):

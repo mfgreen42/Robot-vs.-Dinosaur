@@ -1,3 +1,4 @@
+from robot import Robot
 
 class Dinosaur:
 
@@ -9,4 +10,6 @@ class Dinosaur:
 
 
     def attack(self, robot):
-        
+        robot -= robot
+        print('Dinosaur attacked Robot for xx damage!')
+        print('Robot has xx health remaining!')
