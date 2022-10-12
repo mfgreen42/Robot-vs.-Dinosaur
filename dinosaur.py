@@ -9,4 +9,4 @@ class Dinosaur:
 
 
     def attack(self, robot):
-        pass
+        

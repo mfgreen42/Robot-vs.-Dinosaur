@@ -10,14 +10,21 @@ class Battlefield:
         self.dinosaur = Dinosaur
 
     def run_game(self):
-        pass
+        self.display_welcome()
+    
 
 
     def display_welcome(self):
-        pass
+        print("""
+Welcome to the Battlefield! 
+Only one will be victorious 
+        
+        """)
+
 
     def battle_phase(self):
         pass
+
 
     def display_winner(self):
         pass
