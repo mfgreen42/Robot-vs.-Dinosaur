@@ -14,7 +14,7 @@ class Battlefield:
         self.battle_phase()
         self.display_winner()
         
-        
+
     def display_welcome(self):
         print("""
 Welcome to the Battlefield! 
@@ -40,7 +40,12 @@ Only one will be victorious
                 battle_bool = False
 
     def display_winner(self):
-        pass
+        if self.robot.health <= 0:
+            print()
+            print(f'The winner is {self.dinosaur.name} !!')
+        elif self.dinosaur.health <= 0:
+            print()
+            print(f'The winner is {self.robot.name} !!')
 
 
 
